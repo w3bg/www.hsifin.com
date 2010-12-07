@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+{embed="inc/meta"}
+{embed="inc/_styles" add="c/sddm"}
+</head>
+
+<body class="subpage"id='{exp:channel:entries}{url_title}{exp:channel:entries}'>
+{embed="/inc/header"}
+	
+			<div id="content">
+				<div id='content_left'>
+
+					<div id='sub_image'>
+{embed='/inc/sub_image'}
+						
+					</div>
+					<div id='text_area'>
+
+{exp:channel:entries}
+					<h1>{title}</h1>
+
+{/exp:channel:entries}
+			<div id="masterdiv">
+{exp:channel:entries channel='solutions' dynamic='off' entry_id='21'}
+<h2>Virtual Business Office (Early-Out) Solutions</h2>
+{solutions}
+<?php 
+$s_cat = '{s_cat}';
+if ($s_cat =="Virtual Business Office (Early-Out) Solutions") {
+?>				
+			<div class="menutitleclose" onclick="SwitchMenu('sub{row_count}', 'title{row_count}')" id="title{row_count}">{s_title}</div>
+				<span class="submenu" id="sub{row_count}">
+					<div id='solu_text'>{s_text}</div>
+					<div id="solu_logo">{if "{s_logo}"}<img src="{s_logo}" border="0" />{/if}<br />{if "{s_logo_2}"}<img src="{s_logo_2}" border="0" />{/if}</div>
+
+				</span>
+<?php 
+}
+?>
+{/solutions}
+<h2 style="margin-top:20px;position:relative; float:left">Debt Collection Solutions</h2>
+{solutions}
+<?php 
+$s_cat = '{s_cat}';
+if ($s_cat =="Debt Collection Solutions") {
+?>
+				<div class="menutitleclose" onclick="SwitchMenu('sub{row_count}', 'title{row_count}')" id="title{row_count}">{s_title}</div>
+				<span class="submenu" id="sub{row_count}">
+					<div id='solu_text'>{s_text}</div>
+					<div id="solu_logo">{if "{s_logo}"}<img src="{s_logo}" border="0" />{/if}<br />{if "{s_logo_2}"}<img src="{s_logo_2}" border="0" />{/if}</div>
+
+				</span>
+<?php 
+}
+?>
+{/solutions}
+<h2 style="margin-top:20px;position:relative; float:left">Recovery Enhancement and Compliance Solutions</h2>
+{solutions}
+<?php 
+$s_cat = '{s_cat}';
+if ($s_cat =="Recovery Enhancement and Compliance Solutions") {
+?>
+				<div class="menutitleclose" onclick="SwitchMenu('sub{row_count}', 'title{row_count}')" id="title{row_count}">{s_title}</div>
+				<span class="submenu" id="sub{row_count}">
+					<div id='solu_text'>{s_text}</div>
+					<div id="solu_logo">{if "{s_logo}"}<img src="{s_logo}" border="0" />{/if}<br />{if "{s_logo_2}"}<img src="{s_logo_2}" border="0" />{/if}</div>
+
+				</span>
+<?php 
+}
+?>
+{/solutions}
+{/exp:channel:entries}
+
+			</div>
+
+<p>&nbsp;</p>
+					</div>
+				</div>
+				<div id="content_right">
+{embed="/inc/get_info"}
+{embed="/inc/3-button_box"}
+
+				</div>
+			</div>
+{embed="inc/affiliations"}
+{embed="inc/footer"}
+{embed="inc/_scripts" add="j/switchmenu|j/jquery.innerfade"}
+		<script type="text/javascript">
+		   $(document).ready(
+					function(){
+
+						
+						$('ul#aff_images').innerfade({
+							speed: 1000,
+							timeout: 5000,
+							type: 'sequence',
+							containerheight: '108px'
+						});
+						
+				});
+  		</script>
+
+
+</body>
+</html>

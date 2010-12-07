@@ -1,0 +1,21 @@
+					<div id="test_box">
+						<div id='test_box_top'>
+What our clients are saying						
+						
+						</div>
+{exp:channel:entries channel='testimonials' dynamic='off' entry_id='45'}
+{testimonials sort="random" limit="1"}
+					<div id='test_box_mid'>
+
+{t_desc}					
+
+
+
+						</div>
+						<div id='text_box_but'>
+<strong>{t_name}</strong><br />{t_title}
+
+						</div>
+{/testimonials}
+{/exp:channel:entries}					
+					</div>

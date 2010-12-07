@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+{embed="inc/meta"}
+{embed="inc/_styles"}
+</head>
+
+<body class="subpage"id='{exp:channel:entries}{url_title}{exp:channel:entries}'>
+{embed="/inc/header"}
+	
+			<div id="content">
+				<div id='content_left'>
+
+					<div id='sub_image'>
+{embed='/inc/sub_image'}					
+					</div>
+					<div id='text_area'>
+
+{exp:channel:entries}
+					<h1 style='width:310px;float:left'>{title}</h1>
+
+{/exp:channel:entries}
+<div style='float:left;background-image:url(/images/ee2/btn_view_job.png);width:223px; height:30px;'>
+{exp:channel:entries channel="btn_text" dynamic="off" entry_id='53'}
+{btn_text_others}
+<a href='/available_jobs'><div class='big_btn_text' style='padding:5px 15px 0px 15px;'>{btn_view}</div></a>
+{/btn_text_others}
+{/exp:channel:entries}
+</div>
+<div style='clear:both;height:20px;width:515px;'></div>					
+{/exp:channel:entries}
+{exp:channel:entries channel='join_our_team' dynamic='off' entry_id='27'}
+{join_our_team}
+<h2>{j_title}</h2>
+{j_text}
+{if {row_count}<{total_rows}}<img src="/images/ee2/content_divider.jpg" alt="" /> {/if}
+{/join_our_team}
+{/exp:channel:entries}
+					</div>
+				</div>
+				<div id="content_right">
+{embed="/inc/join_form"}
+{embed="/inc/3-button_box"}
+
+				</div>
+			</div>
+{embed="inc/affiliations"}
+{embed="inc/footer"}
+{embed="inc/_scripts" add="j/jquery.innerfade"}
+		<script type="text/javascript">
+		   $(document).ready(
+					function(){
+						
+						$('ul#aff_images').innerfade({
+							speed: 1000,
+							timeout: 5000,
+							type: 'sequence',
+							containerheight: '108px'
+						});
+						
+				});
+  		</script>
+
+
+</body>
+</html>

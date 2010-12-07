@@ -1,0 +1,31 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+{exp:channel:entries}{exp:nsm_better_meta:template entry_id='{entry_id}' }{/exp:channel:entries}
+<title>{title}</title>
+		<meta name="description" content="{description}" />
+		<meta name="keywords" content="{keywords}" />
+		<meta name="robots" content="{robots}" />
+
+		<meta name="geo.position" content="{geo_latitude},{geo_longitude}" />
+		<meta name="geo.placename" content="{geo_placename}" />
+		<meta name="geo.region" content="{geo_region}" />
+
+		{if canonical_url} <link rel="canonical_url" href="{canonical_url}" /> {/if}
+
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+		<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+		<meta name="DC.title" content="{title}" />
+		<meta name="DC.creator" content="{author}" />
+		<meta name="DC.subject" content="{keywords}" />
+		<meta name="DC.description" content="{description}" />
+		<meta name="DC.publisher" content="{publisher}" />
+		<meta name="DC.date.created" scheme="DCTERMS.W3CDTF" content="{date_created}" />
+		<meta name="DC.date.modified" scheme="DCTERMS.W3CDTF" content="{date_modified}" />
+		<meta name="DC.date.valid" scheme="DCTERMS.W3CDTF" content="{date_valid}" />
+		<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
+		<meta name="DC.rights" scheme="DCTERMS.URI" content="{rights}">
+		<meta name="DC.format" content="text/html" />
+		<meta name="DC.identifier" scheme="DCTERMS.URI" content="{identifier}" />
+{/exp:nsm_better_meta:template }
+<link rel="shortcut icon" type="image/ico" href="/m/favicon.ico" />
+<script src="/j/dropdown.js" type="text/javascript" charset="utf-8"></script>
+

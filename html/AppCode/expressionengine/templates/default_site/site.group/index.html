@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+{embed="inc/meta"}
+
+{embed="inc/_styles" add="ajax/css/slider"}
+</head>
+
+<body id='homepage'>
+		
+{embed="/inc/header"}
+			<div id='video_area'>
+             {embed="/inc/slider"}
+			</div>
+			<div id="content">
+				<div id='content_left'>
+					<div id='text_area'>
+{exp:channel:entries}
+					<h1>{title}</h1>
+						{content}
+{/exp:channel:entries}
+					</div>
+				</div>
+				<div id="content_right">
+{embed="inc/3-button_box"}
+				</div>
+			</div>
+{embed="inc/affiliations"}
+{embed="inc/footer"}
+{embed="inc/_scripts" add="ajax/js/jquery.easing.1.2|ajax/js/jquery.anythingslider|j/jquery.innerfade"}
+		<script type="text/javascript">
+		   $(document).ready(
+					function(){
+						
+						$('ul#aff_images').innerfade({
+							speed: 1000,
+							timeout: 5000,
+							type: 'sequence',
+							containerheight: '108px'
+						});
+						
+				});
+  		</script>
+
+
+		
+</body>
+</html>

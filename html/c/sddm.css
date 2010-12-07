@@ -1,0 +1,61 @@
+.masterdiv {
+position:relative;
+float:left;
+padding-bottom:20px;
+}
+.menutitleopen{
+font-size:14px;
+font-weight:bold;
+  background: url("/images/ee2/arrow-down-title.jpg") no-repeat 0 0;
+  background-position:center center;
+  background-repeat:no-repeat;
+  border: none;
+  width:538px;
+  height: 27px;
+  color: #8f877a;
+  cursor:pointer;
+  text-indent:35px;
+  padding-top:12px;
+  margin-top:4px;
+position:relative;
+float:left;
+}
+.menutitleclose{
+font-size:14px;
+font-weight:bold;
+  background: url("/images/ee2/arrow-up-title.jpg") no-repeat 0 0;
+  background-position:center center;
+  background-repeat:no-repeat;
+  border: none;
+  width:538px;
+  height: 27px;
+  color: #8f877a;
+  cursor:pointer;
+  text-indent:35px;
+  padding-top:12px;
+  margin-top:4px;
+position:relative;
+float:left;
+}
+
+.submenu{
+	background-color: #e8e8e7;
+	color: #8f877a;
+	padding:8px 20px 20px 32px;
+	width: 486px;
+position:relative;
+float:left;
+
+}
+#solu_logo {
+width:120px;
+position:relative;
+float:left;
+}
+#solu_text {
+width:346px;
+position:relative;
+float:left;
+padding-right:20px;
+
+}

@@ -1,0 +1,64 @@
+					<div id="form_box">
+						<div id='form_box_top'>
+{exp:channel:entries channel="btn_text" dynamic="off" entry_id='53'}
+{btn_text_others}							
+<div id='more_info'><div class='big_btn_text' style='font-size:20px;'>{btn_more_info}</div></div>
+{/btn_text_others}
+{/exp:channel:entries}												
+						</div>
+						<div id='form_box_mid'>
+						<p style='font-size:13px; line-height:110%'>Complete this form or contact HSI's Sales Staff at <span style="color:#cc8e38">770-850-7476</span>.</p>
+						<form name="form_info" id='form_info' action="/custom/solutions_end.php" method="post">
+<input type="text" name="name" value="Name" class="blue" size="18"  id="name" onclick="if (this.value == 'Name') { this.value = ''; }" onfocus="if (this.value == 'Name') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Name'; }"/>
+<input type="text" name="title" value="Title" class="blue" size="18" id="title" onclick="if (this.value == 'Title') { this.value = ''; }" onfocus="if (this.value == 'Title') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Title'; }"/>
+<input type="text" name="healthcare" value="Healthcare Organization" class="blue" size="18" id="healthcare"  onclick="if (this.value == 'Healthcare Organization') { this.value = ''; }" onfocus="if (this.value == 'Healthcare Organization') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Healthcare Organization'; }" />
+<input type="text" name="email" value="Email Address" class="blue" size="18" id="email_site"  onclick="if (this.value == 'Email Address') { this.value = ''; }" onfocus="if (this.value == 'Email Address') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Email Address'; }" />
+<input type="text" name="phone" value="Phone" class="blue" size="18" id="phone" onclick="if (this.value == 'Phone') { this.value = ''; }" onfocus="if (this.value == 'Phone') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Phone'; }"/>	
+<p>Please contact me regarding these solutions<br />
+<select name="solution1" >
+{exp:channel:entries channel='solutions' dynamic='off' entry_id='21'}
+<option value='' >-- Solution 1 --</option>
+{solutions}
+<option value='s_title}' > {s_title} </option>
+{/solutions}
+{/exp:channel:entries}
+</select>
+<select name="solution2" >
+{exp:channel:entries channel='solutions' dynamic='off' entry_id='21'}
+<option value='' >-- Solution 2 --</option>
+{solutions}
+<option value='s_title}' > {s_title} </option>
+{/solutions}
+{/exp:channel:entries}
+</select>	
+<select name="solution3" >
+{exp:channel:entries channel='solutions' dynamic='off' entry_id='21'}
+<option value='' >-- Solution 3 --</option>
+{solutions}
+<option value='s_title}' > {s_title} </option>
+{/solutions}
+{/exp:channel:entries}
+</select></p>	
+Comments<br  />
+<textarea name="msg" class="blue" rows="5"></textarea><br />
+<input type="submit" name="submit" id='btn_submit' value=""/>				
+</form>
+						<div style="margin-left:-20px"><img src='/images/ee2/form_bg_divider.png' alt="" /></div>
+<div id='notice'>
+<p><strong>IMPORTANT NOTICE</strong></p>
+
+<p>HSI Financial Services, LLC is a debt collector.  To ensure compliance with federal collection laws, we do not communicate with patients via e-mail. If you have received a notice regarding an account referred to HSI Financial Services, LLC, please contact a member of our professional collection staff by calling (770) 850-7450, or toll free 800-282-3108. Written inquiries should be addressed to:</p>
+
+<p>HSI Financial Services, LLC<br  />
+Post Office Box 723537<br />
+Atlanta, GA 31139</p>
+
+<p>Please be sure to include your name, address, name of your creditor, and account number on all written inquiries.</p>
+</div>
+						
+						</div>
+						<div id='form_box_bot'>
+						</div>
+				
+					</div>
+						

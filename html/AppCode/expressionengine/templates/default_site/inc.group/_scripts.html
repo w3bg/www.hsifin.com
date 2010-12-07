@@ -1,0 +1,9 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="/j/main.js"></script>
+
+{if "{embed:add}" != ""}
+<?php $splitcontents = explode('|', '{embed:add}');
+foreach($splitcontents as $file) {
+ echo '<script type="text/javascript" src="{site_url}'.$file.'.js" ></script>'."\n";
+} ?>
+{/if}

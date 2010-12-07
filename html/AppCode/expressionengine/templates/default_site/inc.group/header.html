@@ -1,0 +1,30 @@
+<div id='site_main'>
+	<div id="wrapper">
+			<div id="about_dropdown">
+						<ul>
+							<li><a href="/about/our_mission" {if segment_2 == "our_mission"} class="here"{/if}>Our Mission, Vision and Values</a></li>
+							<li><a href="/about/board_of_directors" {if segment_2 == "board_of_directors"} class="here"{/if}>Board of Directors</a></li>
+							<li><a href="/about/affiliations" {if segment_2 == "affiliations"} class="here"{/if}>Affiliations</a></li>
+							<li><a href="/about/strategic_partners" {if segment_2 == "strategic_partners"} class="here"{/if}>Strategic Partners</a></li>
+							<li><a href="/about/testimonials" {if segment_2 == "testimonials"} class="here"{/if}>Testimonials</a></li>
+
+						</ul>
+			</div>
+		<div id='header'>
+			<div id='header_left'>
+				<div id='logo'><a href="/"><img src="/images/ee2/logo.jpg" alt="HSI" border="0" /></a></div>
+			</div>
+			<div id='header_right'>
+				<div id="main_nav">
+					<ul id="menu">
+						<li><a href="/solutions" id='menu_solutions'{if segment_1 == "solutions"} class="here"{/if} >Solutions</a></li>
+						<li><a href="/about" id='menu_about' rel='about_dropdown' {if segment_1 == "about"} class="here"{/if}>About Us</a></li>
+						<li><a href="/compliance" id='menu_compliance' {if segment_1 == "compliance"} class="here"{/if}>Compliance</a></li>
+						<li><a href="/join_our_team" id='menu_join' {if segment_1 == "join_our_team"} class="here"{/if}>Join Our Team</a></li>
+						<li><a href="/contact" id='menu_contact'  {if segment_1 == "contact"} class="here"{/if}>Contact</a></li>
+					</ul>                                       
+				</div>
+				<div id='slogan'><img src="/images/ee2/slogan.jpg" alt="A Phoenix Health Care Management Services Companhy" /></div>
+			</div>
+		</div>
+		<div id='page'>

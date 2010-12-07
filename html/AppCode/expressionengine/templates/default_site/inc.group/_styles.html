@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="{site_url}c/main.css" type="text/css" />
+<!--[if lt IE 8]><link href="{site_url}c/ie8_fixes.css" rel="stylesheet" media="screen, projection" type="text/css" /><![endif]-->
+<!--[if lt IE 7]><link href="{site_url}c/ie7_fixes.css" rel="stylesheet" media="screen, projection" type="text/css" /><![endif]-->
+
+{if "{embed:add}" != ""}
+<?php $splitcontents = explode('|', '{embed:add}');
+foreach($splitcontents as $file) {
+ echo '<link rel="stylesheet" href="{site_url}'.$file.'.css" type="text/css" />'."\n";
+} ?>
+{/if}

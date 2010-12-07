@@ -1,0 +1,40 @@
+<!-- AJAX SLIDER - CUSTOMIZED FOR HSI -->
+<div id="main_slider">
+<div class="anythingSlider">
+<div class="wrapper">
+  	<ul>
+    {exp:channel:entries channel="home_slider" status="Open|Pending" dynamic="off"}
+    {slider_content}
+    <li>
+    <div style="width:1005px;">
+    <a href="{primary_link}" target="{if new_win}_blank{if:else}_self{/if}"><img src="{primary_img}" border="0" alt="" /></a>
+    </div>
+    </li>   
+    {/slider_content}
+    {/exp:channel:entries}             
+	</ul>      
+	</div>
+	</div> 
+
+   <!-- VIMEO CONTROLS - REMAIN HIDDEN - ONLY FOR JS USE -->      
+        
+<div id="controls" style="display: none;">
+	<p>
+	<a href="javascript: void(0)" onclick="moogaloop.api_play()">Play</a> 
+	<a href="javascript: void(0)" onclick=" moogaloop.api_pause()">Pause</a>
+	</p>
+	<p>
+	State: <span id="state"></span><br />
+	Duration: <span id="vimeo_duration">0</span> seconds<br />
+	Seek: <input type="text" value="0" onblur="moogaloop.api_seekTo(this.value)" /><br />
+	Color: <input type="text" value="" onblur="moogaloop.api_changeColor(this.value)" /><br />
+	Volume: <input type="text" value="100" onblur="moogaloop.api_setVolume(this.value)" /><br />
+	<input type="button" value="Loop is off" onclick="toggle_loop(this);" />
+	</p>
+	<p>
+	Current time: <span id="vimeo_cur_time">0</span><br />
+	Bytes loaded: <span id="vimeo_bytes_loaded">0</span> / <span id="vimeo_bytes_total">0</span> = <span id="vimeo_decimal_loaded">0</span> = <span id="vimeo_percent_loaded">0%</span><br />
+	</p>         
+   </div>   
+   
+   <!-- END AJAX SLIDER -->      

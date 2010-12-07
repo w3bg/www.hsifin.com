@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+{embed="inc/meta"}
+{embed="inc/_styles"}
+</head>
+
+<body class="subpage"id='{exp:channel:entries}{url_title}{exp:channel:entries}'>
+{embed="/inc/header"}
+	
+			<div id="content">
+				<div id='content_left'>
+
+					<div id='sub_image'>
+	{embed="/inc/sub_image"}
+
+						
+					</div>
+					<div id='text_area'>
+
+{exp:channel:entries}
+					<h1>{title}</h1>
+						{content}
+{/exp:channel:entries}
+					</div>
+				</div>
+				<div id="content_right">
+
+{embed="/inc/3-button_box"}
+					<div id="test_box">
+						<div id='test_box_top'>
+What Our Clients Are Saying.						
+						
+						</div>
+						<div id='test_box_mid'>
+						
+South Georgia Medical Center has partnered with HSI Financial Services for over twelve years.  Their recovery programs have provided great value while ensuring our patients are treated with respect.  The collection of health care accounts requires a professional, yet personal approach, and HSI strikes that balance.
+
+
+
+						</div>
+						<div id='text_box_but'>
+		   <strong>Jeff Sherman</strong><br />
+		   Director of Patient Financial Services<br />
+		   South Georgia Medical Center
+
+						</div>
+					</div>
+				</div>
+			</div>
+{embed="inc/affiliations"}
+{embed="inc/footer"}
+{embed="inc/_scripts" add="j/jquery.innerfade"}
+		<script type="text/javascript">
+		   $(document).ready(
+					function(){
+						
+						$('ul#aff_images').innerfade({
+							speed: 1000,
+							timeout: 5000,
+							type: 'sequence',
+							containerheight: '108px'
+						});
+						
+				});
+  		</script>
+
+
+</body>
+</html>
